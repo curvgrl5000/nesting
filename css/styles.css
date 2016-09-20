@@ -1,0 +1,235 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	padding: 0px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 80em;
+    position: relative;
+    display: block;
+}
+
+.all_boxes {
+	padding: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.box_4 {
+	padding: 2em;
+	min-width: 100%;
+      min-height: 100%;
+}
+
+.special_box {
+	background-color: #F8AEAA;
+	padding: 1em;
+	min-height: 12em;
+	max-height: 25em;
+}
+
+.grid {
+	padding: 0px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0px;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0 auto;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #2c3f52;
+	color: #ed4e6e;
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.grid figcaption span:before {
+	content: 'by ';
+}
+
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+}
+
+.nested_reveal figure img {
+	z-index: 10;
+	transition: transform 0.4s;
+	margin: 0 auto;
+}
+
+.no-touch .nested_reveal figure:hover img,
+.nested_reveal figure.cs-hover img {
+	transform: scale(0.4);
+}
+
+.nested_reveal figcaption {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transform: scale(0.7);
+	backface-visibility: hidden;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+.no-touch .nested_reveal figure:hover figcaption,
+.nested_reveal figure.cs-hover figcaption {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.nested_reveal figure a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.bg_bkground_12 {
+	background: linear-gradient(270deg, #a24bcf, #4b79cf, #4bc5cf);
+	background-size: 300% 300%;
+
+	-webkit-animation: MoveBG 30s ease infinite;
+	-moz-animation: MoveBG 30s ease infinite;
+	animation: MoveBG 30s ease infinite;
+}
+@-webkit-keyframes MoveBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes MoveBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes MoveBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.bg_bkground_10 {
+	min-height: 100%;
+	background: linear-gradient(269deg, #F4867B, #da5853, #a74340);
+	background-size: 600% 600%;
+
+	-webkit-animation: MoveBG_10 30s ease infinite;
+	-moz-animation: MoveBG_10 30s ease infinite;
+	-o-animation: MoveBG_10 30s ease infinite;
+	animation: MoveBG_10 30s ease infinite;
+}
+
+@-webkit-keyframes MoveBG_10 {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+@-moz-keyframes MoveBG_10 {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+@-o-keyframes MoveBG_10 {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+@keyframes MoveBG_10 { 
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+
+.reveal_magic h1, .reveal_magic p {
+	opacity: 0;
+}
+
+
+@media screen and (max-width: 42.7em) {
+ .grid figcaption {
+ 	padding: 10px;
+ }
+
+.grid figcaption span {
+	display: none;
+}
+
+.grid li {
+	text-align: left;
+}
+
+ .nested_reveal figure a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: .7em;
+}
+.h3, h3 {
+    font-size: 1.35em;
+}
+
+}
+
+@media screen and (max-width: 31.5em) {
+	.grid {
+		padding: 0px;
+	}
+	.grid li {
+		display: none;
+	}
+	.reveal_magic h1, .reveal_magic p {
+		text-align: center;
+		color: white;
+		opacity : .8;
+		text-shadow: 2px 2px 7px #0A293C;
+
+	}
+	.reveal_magic p {
+		font-size: 2em;
+		opacity : .5;
+		text-shadow: 2px 2px 7px #0A293C;
+	}
+}
